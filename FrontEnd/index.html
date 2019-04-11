@@ -1,13 +1,243 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>PlayItUp</title>
-	<meta charset="utf-8" />
-	<link href='style.css' rel='stylesheet' />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="script.js"></script>
-</head>
-<body>
- 
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>PlayItUp</title>
+	<link rel = "stylesheet"
+   type = "text/css"
+   href = "style.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"><!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	  <script src="script.js"></script>
+  </body>
 </html>
+
+
+
+<header>
+  <nav class="mb-1 navbar navbar-expand-lg navbar-light bg-lignt">
+    <a class="navbar-brand" href="#">
+      <img src="resources\logo.jpg" alt="playitup" width="80" height="90"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+      aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#myService" style="color: #fff">About us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: #fff">
+            Sports
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: #fff">
+            Bookings
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" href="#myAbout" style="color: #fff">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-success" routerLink='signin'>Login & Signup</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="title">
+    <h1 style="font-size:4vw;color: #fff;text-align: center;">Odisha's biggest sports platform <br><br>
+      <p style="font-size: 1.42vw">
+        Get 50% discount on your first transaction with code
+        <u>SLAUNCH</u></p>
+    </h1>
+  </div>
+  <br>
+  <div class="row justify-content-center">
+    <div class="card col-md-10">
+      <div class="card-body">
+        <form>
+          <div class="row">
+            <div class="col-md-3 mx-sm-2">
+              <div class="input-group">
+                <input type="text" class="form-control" id="text2" placeholder="Sports...">
+              </div>
+            </div>
+            <div class="col-md-3 mx-sm-2">
+              <div class="input-group">
+                <select class="custom-select" id="inputGroupSelect02">
+                  <option selected>No of players</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3 mx-sm-2">
+              <div class="input-group">
+                <input type="date" name="dateofbirth" id="dateofbirth">
+              </div>
+            </div>
+            <div class="col-md-2">
+              <button type="submit" class="btn btn-success">Search
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="container col-md-11">
+    <div class="row justify-content-center">
+      <div class="item col-md-2 mx-sm-2">
+        <img href="#" src="resources\11.png" class="rounded-circle" alt="Cinque Terre" width="124" height="106">
+        <span class="caption">Book a ground</span>
+      </div>
+      <div class="item col-md-2 mx-sm-2">
+        <img src="resources\12.png" class="rounded-circle" alt="Cinque Terre" width="124" height="106">
+        <span class="caption">Join a team</span>
+      </div>
+      <div class="item col-md-2 mx-sm-2">
+        <img src="resources\14.png" class="rounded-circle" alt="Cinque Terre" width="124" height="106">
+        <span class="caption">Be a coach</span>
+      </div>
+      <div class="item col-md-2 mx-sm-2">
+        <img src="resources\13.png" class="rounded-circle" alt="Cinque Terre" width="124" height="106">
+        <span class="caption">Tournaments</span>
+      </div>
+      <div class="item col-md-2">
+        <img src="resources\15.png" class="rounded-circle" alt="Cinque Terre" width="124" height="106">
+        <span class="caption">Our shop</span>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+<coach>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3 col-md-4 col-lg-2" >
+              <img src="resources\768px-Futsal_pictogram.svg.png" alt="playitup" width="110" height="110"></a>
+          </div>
+          <div class="col-sm-9 col-md-8 col-lg-8" >
+            <h1 style="font-size:2vw;text-align: center;">Want to join as a </h1>
+            <p style="color: green;text-align: center; font-weight: bold;font-size:1.8vw">COACH?</p>
+            <p style="text-align: center; font-weight: bold;font-size:1.2vw">Lorem Ipsum is simply dummy text of the priniting and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          </div>
+          <div class="col-sm-9 col-md-4 col-lg-2" style="padding-left: 5%;">
+              <img src="resources\1200px-Diving_pictogram.svg (1).png" alt="playitup" width="110" height="110"></a>
+          </div>
+        </div>
+    </div>
+  <div class="row justify-content-center" >
+      <button type="button"  class="btn btn-primary btn-lg"
+      style="background-color: rgb(2, 63, 2); justify-content: center; width: 16%;"> Join </button>
+  </div>   
+</coach>
+
+
+
+
+
+<footer>  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h1 style="font-size:4vw;text-align: center;color: #fff">PLAY IT UP</h1><br>
+  <div class="container col-md-10">
+    <div class="row justify-content-center">
+      <div class="col-md-2">
+        <a href="ourwork"><span style="color: #fff">OUR WORK</span></a>
+      </div>
+      <div class="col-md-1">
+      <i class="fas fa-gem" style="color: #fff"></i>
+      </div>
+      <div class="col-md-2">
+        <a href="ourwork"><span style="color: #fff">BLOG</span></a>
+      </div>
+      <div class="col-md-1">
+          <i class="fas fa-gem" style="color: #fff"></i>
+          </div>
+      <div class="col-md-2">
+        <a href="ourwork"><span style="color: #fff">CAREER</span></a>
+      </div>
+      <div class="col-md-1">
+          <i class="fas fa-gem" style="color: #fff"></i>
+          </div>
+      <div class="col-md-2">
+        <a href="ourwork"><span style="color: #fff">PARTNER</span></a>
+      </div>
+    </div>
+  </div>
+<br><br>
+  <h1 style="font-size:2vw;text-align:center; color: #fff">GET CONNECTED WITH US IN SOCIAL NETWORK</h1>
+  
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-1" style="color: #fff;font-size: 2em;">
+        <i class="fab fa-facebook-f"></i>
+        </div>
+        <div class="col-md-1" style="color: #fff;font-size: 2em;">
+        <i class="fab fa-instagram"></i>
+        </div>
+        <div class="col-md-1" style="color: #fff;font-size: 2em;">
+        <i class="fab fa-twitter"></i>
+        </div>
+        <div class="col-md-1" style="color: #fff;font-size: 2em;">
+        <i class="fab fa-linkedin-in"></i>
+        </div>
+    </div>
+  </div>
+  <div class="container col-md-12">
+      <div class="row justify-content-center" style="font-size: 1.5vw;">
+        <div class="item col-md-3">
+          <span class="caption">Phone:<span style="color: rgb(0, 128, 0)">7008756612</span></span>
+        </div>
+        <div class="item col-md-3 mx-sm-4">
+          <span class="caption">General:<span style="color: rgb(0, 128, 0)">info@playitup.com</span></span>
+        </div>
+        <div class="item col-md-3 mx-sm-4">
+          <span class="caption">Sales:<span style="color: rgb(0, 128, 0)">sales@playitup.com</span></span>
+        </div>
+      </div>
+    </div>
+
+<div class="row justify-content-center" style="color: #fff;">
+    <div class="footer-copyright text-center py-3">©Copyrights:<a href="" style="color: #fff;">Playitup</a>
+      | Terms & Conditions | 2019
+    </div>
+</div>
+
+</footer>
