@@ -20,7 +20,7 @@ function PlayItUp(config){
             let me = this;
             console.log("page load events");
         },
-    }     
+    }    
 
     return playItUp;
 }
