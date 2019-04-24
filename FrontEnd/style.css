@@ -109,6 +109,36 @@ footer{
         background-color: #fff
 }
 
-.login{
-    float:right;
+.thirdpartylogin{
+    text-align: center;
 }
+
+  /*------ Signup and login Modal-------*/
+.modal-dialog {
+    position:absolute;
+    top:50% !important;
+    transform: translate(0, -50%) !important;
+    -ms-transform: translate(0, -50%) !important;
+    -webkit-transform: translate(0, -50%) !important;
+    width:auto;
+    height:auto;
+}
+.signup-modal{
+    padding: 0;
+    border-bottom-style:hidden;
+    border-bottom-width:thick;
+    border-bottom-color: green;
+}
+.signup-modal-text{
+    color: black !important;
+}
+.tab-content{
+    padding-top: 20px;
+}
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+  }
